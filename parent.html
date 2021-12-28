@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/parent.css">
+    <link rel = "icon" href = "./svg/W.png">
+    <title>Parent</title>
+</head>
+
+<body>
+    <div class="navbar flex flex-1">
+        <div class="title flex flex-1">
+            <img src="svg/W.png" alt="logo" width="50px">
+            <h1>Wishlist</h1>
+        </div>
+        <div class="list flex flex-1">
+            <ul>
+                <li>
+                    <h3 id="backToProfile">Child's Profile</h3>
+                </li>
+                <li><button class="logOut">Log Out</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content flex flex-9">
+        <div class="childContainer flex">
+                <div class="profile">
+                    <!-- <div class="child flex">
+                        <img class="avatarimg" src="https://api.getepic.com/utils/compose.png?avatar_id=15&amp;frame_id=1&amp;size=2x&amp;style_type=avatar" alt="avatar" width="170px">
+                        <h3 class="name">aash</h3>
+                    </div> -->
+                </div>
+                <div class="wishbox flex flex-6">
+                    <!-- <div class="wish flex">
+                        <img class="avatarimg" src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/008-music%20player.svg?alt=media" alt="avatar" width="170px">
+                        <h3 class="name">1234</h3>
+                    </div>
+                    <div class="wish flex">
+                        <img class="avatarimg" src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/008-music%20player.svg?alt=media" alt="avatar" width="170px">
+                        <h3 class="name">1234</h3>
+                    </div>
+                    <div class="wish flex">
+                        <img class="avatarimg" src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/008-music%20player.svg?alt=media" alt="avatar" width="170px">
+                        <h3 class="name">1234</h3>
+                    </div>
+                    <div class="wish flex">
+                        <img class="avatarimg" src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/008-music%20player.svg?alt=media" alt="avatar" width="170px">
+                        <h3 class="name">1234</h3>
+                    </div> -->
+                </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+    <script src="./js/base.js"></script>
+    <script src="./js/wishlist.model.js"></script>
+    <script src="./js/parent.controller.js"></script>
+
+</body>
+</html>

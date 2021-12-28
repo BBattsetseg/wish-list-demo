@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/Wishlist.css">
+    <link rel = "icon" href = "./svg/W.png">
+</head>
+<body>
+    <div class="navbar flex flex-1">
+        <div class="title flex flex-1">
+            <img src="svg/W.png" alt="logo" width="50px">
+            <h1>Wishlist</h1>
+        </div>
+        <div class="list flex flex-1">
+            <ul>
+                <li>
+                    <h3 id="navbarProfileBtn1">Child's Profile</h3>
+                </li>
+                <li><button class="logOut">Log Out</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container flex flex-9">
+        <div class="wishbox flex">
+        </div>
+        <div class="addWish flex">
+            <button id="addWishBtn">add wish</button>
+        </div>
+    </div>
+    <div class="wishAddModul">    
+        <div class="modalbox flex">            
+            <div class="defualtWish flex flex-3">
+                <div class="modalWish">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/004-videogames.svg?alt=media" alt="img">
+                    <h2>Game</h2>
+                </div>
+                <div class="modalWish">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/050-football%20ball.svg?alt=media" alt="img">
+                    <h2>Football</h2>
+                </div>
+                <div class="modalWish">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/049-bicycle.svg?alt=media" alt="img">
+                    <h2>Bicycle</h2>
+                </div>
+                <div class="modalWish">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/038-camera.svg?alt=media" alt="img">
+                    <h2>Gadget</h2>
+                </div>
+                <div class="modalWish">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/026-guitar.svg?alt=media" alt="img">
+                    <h2>Guitar</h2>
+                </div>
+                <div class="modalWish">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/011-basketball.svg?alt=media" alt="img">
+                    <h2>Basketball</h2>
+                </div>
+                <div class="modalWish">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/008-music%20player.svg?alt=media" alt="img">
+                    <h2>Music</h2>
+                </div>
+                <div class="modalWish">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/003-kite.svg?alt=media" alt="img">
+                    <h2>Other</h2>
+                </div>                           
+            </div>
+            <div class="form flex flex-1">
+                <h2>Choose your wish</h2>
+                <input  id="modulTitle" type="text" placeholder="Title">
+                <input  id="modulDesc" type="text" placeholder="Description">
+                <button id="modulAddWishBtn">add</button>
+            </div>            
+        </div>   
+    </div>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+
+<script src="./js/base.js"></script>
+<script src="./js/wishlist.model.js"></script>
+<script src="./js/wishlist.controller.js"></script>
+<script>
+    function drawList(lists){   
+        var $wishlists = document.querySelector('.wishbox');
+        
+        $wishlists.innerHTML = '';
+        lists.forEach((item) => {
+            $list = $createList(item);
+            $wishlists.append($list);
+        });
+    }
+</script>
+</body>
+</html>

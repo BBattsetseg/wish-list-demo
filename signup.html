@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel = "icon" href = "./svg/W.png">
+    <title>Whishlist</title>
+</head>
+
+<body>
+    <div class="navbar flex flex-1">
+        <div class="title">
+            <h1>Sign up</h1>
+        </div>
+    </div>
+    <div class="content flex flex-6">
+        <div class="flex-1"></div>
+        <div class="signup flex column flex-1">
+            <h1>Join Wishlist For Free</h1>
+            <div class="form">
+                <h3>Email</h3>
+                <input type="email" placeholder="Email" class="email">
+                <h3>Password</h3>
+                <input type="password" placeholder="Password" class="password">
+                <h3>Parent Pincode</h3>
+                <input type="password" placeholder="Pin" class="pin">
+            </div>
+            <button id="signup">Sign up</button>
+            <div class="login">
+                <p>Already have an account?</p>
+                <h3 class="loginBtn">Log In</h3>
+            </div>
+        </div>
+        <div class="flex-1"></div>
+    </div>
+    <div class="flex-3"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    
+    <script src="./js/base.js"></script>
+</body>
+
+</html>

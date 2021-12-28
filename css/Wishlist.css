@@ -1,0 +1,179 @@
+body {
+    flex-direction: column;
+    display: flex;
+    min-width: 1080px;
+}
+
+/* navbar */
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--grey-color);
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.navbar {
+    background-color: var(--white-color);
+    box-shadow: 0 1px 3px 0 rgb(71 76 85 / 10%);
+}
+
+.title {
+    align-items: center;
+}
+
+.title * {
+    margin-left: 15px;
+}
+
+.list {
+    flex-direction: row-reverse;
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* content */
+.container {
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--grey2-color); 
+}
+
+.wishbox {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 1000px;
+    box-shadow: 0 1px 3px 0 rgb(71 76 85 / 10%);
+    border-radius: 30px;
+    background-color: var(--white-color);
+}
+
+.wish {
+    overflow: hidden;
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.wish:hover {
+    background-color: var(--wishhover-color);
+}
+
+
+.wish img {
+    width: 180px;
+    margin: 5px auto;
+}
+
+.addWish {
+    margin-top: 30px;
+}
+
+/* modul */
+
+.wishAddModul {
+    position: fixed;
+    background-color: rgba(40,59,81,.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center; 
+}
+
+.modalbox {
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 40px;
+    width: 1320px;
+    height: 600px;
+}
+
+.showme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.defualtWish {
+    height: 100%;
+    overflow: scroll;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.modalWish {
+    overflow: hidden;
+    width: 200px;
+    height: 230px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.modalWish:hover {
+    background-color: var(--wishhover-color);
+}
+
+
+.modalWish img {
+    width: 180px;
+    margin: 5px auto;
+}
+
+.modalbox .form {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.modalbox .form * {
+    margin-bottom: 20px;
+}
+
+.modalbox .form h2 {
+    font-size: 30px;
+}
+
+#modulTitle {
+    height: 50px;
+    outline: none;
+}
+
+#modulDesc {
+    height: 150px;
+    outline: none;
+}

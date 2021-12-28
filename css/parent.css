@@ -1,0 +1,96 @@
+body { 
+    display: flex;
+    color: var(--primary-color);
+    flex-direction: column;
+    background-color: var(--grey2-color);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--grey-color);
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.navbar {
+    background-color: var(--white-color);
+    box-shadow: 0 1px 3px 0 rgb(71 76 85 / 10%);
+}
+
+.title {
+    align-items: center;
+}
+
+.title * {
+    margin-left: 15px;
+}
+
+.list {
+    flex-direction: row-reverse;
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.content {
+    flex-direction: column;
+    padding: 10px;
+}
+
+.childContainer {
+    background-color: var(--white-color);
+    border: none;
+    box-shadow: 0 1px 3px 0 rgb(71 76 85 / 10%);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.profile {
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    flex-direction: column;
+    align-items: center;
+}
+
+.wishbox {
+    overflow-x: scroll;
+}
+
+.wish {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 0;
+    margin: 0 20px;
+}
+
+.wish:hover {
+    background-color: var(--wishhover-color);
+    color: var(--white-color);
+}
+
+.wish .name {
+    margin-top: 20px;
+}

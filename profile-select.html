@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/profile-select.css">
+    <link rel = "icon" href = "./svg/W.png">
+    <title>Profile Select</title>
+</head>
+
+<body>
+    <div class="navbar flex flex-1">
+        <div class="title flex flex-1">
+            <img src="svg/W.png" alt="logo" width="50px">
+            <h1>Wishlist</h1>
+        </div>
+        <div class="list flex flex-1">
+            <ul>
+                <li id="modalshowme">
+                    <img  src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/compose%20(6).png?alt=media" alt="avatar" width="45px">
+                </li>
+                <li><button class="logOut">Log Out</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content flex flex-9">
+        <div class="box flex flex-1">
+            <div class="selectyourProfile flex-1">
+                <h2>Select Your Profile</h2>
+            </div>
+            <div class="avatar flex flex-9">
+            </div>
+        </div>
+        <div class="flex-3">
+            <button class="addChildbtn">Add child</button>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modalbox">
+            <h2>Please Enter Your Pin</h2>
+            <img src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/compose%20(6).png?alt=media" alt="avatar" width="90px">
+            <h3>Parent</h3>
+            <input type="password" placeholder="Pin">
+            <button>Go</button>
+        </div>
+    </div>
+    <div class="childPinModal">
+        <div class="modalbox">
+            <h2>Please Enter Your Pin</h2>
+            <img id="childrenImage" src="https://firebasestorage.googleapis.com/v0/b/tema2-74912.appspot.com/o/compose%20(5).png?alt=media" alt="avatar" width="90px">
+            <h3>Parent</h3>
+            <input type="password" placeholder="Pin">
+            <button>Go</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+    <script src="./js/base.js"></script>
+    <script src="./js/child.view.js"></script>
+    <script src="./js/child.controller.js"></script>
+</body>
+</html>

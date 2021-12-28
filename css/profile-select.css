@@ -1,0 +1,156 @@
+body { 
+    display: flex;
+    color: var(--primary-color);
+    flex-direction: column;
+    background-color: var(--grey2-color);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--grey-color);
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.navbar {
+    background-color: var(--white-color);
+    box-shadow: 0 1px 3px 0 rgb(71 76 85 / 10%);
+    justify-content: space-between;
+}
+
+.title {
+    align-items: center;
+}
+
+.title * {
+    margin-left: 15px;
+}
+
+.list {
+    flex-direction: row-reverse;
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectyourProfile {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 30px;
+    width: 1200px;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 30px;
+    box-shadow: 0 1px 3px 0 rgb(71 76 85 / 10%);
+}
+
+.avatar {
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.child {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    background-color: rgba(40,59,81,.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: none;    
+}
+
+.childPinModal {
+    position: fixed;
+    background-color: rgba(40,59,81,.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+.modalbox {
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 40px;
+    position: relative;
+}
+
+.modalbox * {
+    margin: 10px 0;
+}
+
+.modalbox h3 {
+    color: var(--grey-color);
+    font-weight: 400;
+}
+
+.modalbox input {
+    background-color: var(--white-color);
+    padding: 10px;
+    border: 1px solid var(--grey1-color);
+    border-radius: 8px;
+    margin: 5px 0 10px;
+    outline: none;
+}
+
+.modalbox button {
+    background-color: var(--grey1-color);
+}
+
+.modalbox p {
+    cursor: pointer;
+}
+
+.showme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addChildbtn {
+    margin-top: 20px;
+}

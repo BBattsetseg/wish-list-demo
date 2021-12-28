@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Child</title>
+
+        <link rel="stylesheet" href="./css/common.css" >
+        <link rel="stylesheet" href="./css/addChild.css">
+        <link rel = "icon" href = "./svg/W.png">
+    </head>
+    <body class="flex">
+        <div class="navbar flex space-between flex-1">
+            <div class="title flex-1">
+                <h1>Child's Profile</h1>
+            </div>
+            <div class="list flex flex-1">
+                <ul>
+                    <li>
+                        <h3 id="navbarProfileBtn2">Home</h3>
+                    </li>
+                    <li>
+                        <img id="modalshowme" src="https://api.getepic.com/utils/compose.png?avatar_id=21&frame_id=1&size=2x&style_type=avatar" alt="avatar" width="45px">
+                    </li>
+                    <li><button class="logOut">Log Out</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container flex flex-8">
+            <div class="img flex flex-2">
+                <img src="https://www.getepic.com/assets/characters/NUFscreen_Owl2.svg" alt="img">
+            </div>
+            <div class="form flex flex-1 column">
+                <h1>Create your child’s profile</h1>
+                <h3>Child’s Name</h3>
+                <input id="childName" type="text" autoCapitalize="on" placeholder="Enter Child's Name">
+                <h3>Child’s Pin</h3>
+                <input id="childPin" type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;" placeholder="Enter Child's Pin">
+                <div class="buttons flex" >
+                    <button class="finishButton">Finish</button>
+                    <button class="cancelButton">Cancel</button>
+                </div>
+                
+            </div>
+            <div class="flex-2"></div>
+        </div>
+        <div class="flex-2"></div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+
+        <script src="./js/base.js" ></script>
+        <script src="./js/child.view.js"></script>
+        <script src="./js/child.controller.js"></script>
+    </body>
+</html>

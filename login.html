@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel = "icon" href = "./svg/W.png">
+    <title>Whishlist</title>
+</head>
+
+<body>
+    <div class="navbar flex flex-1">
+        <div class="title flex flex-1">
+            <img src="svg/W.png" alt="logo" width="50px">
+            <h1>WISHLIST</h1>
+        </div>
+        <div class="list flex flex-1"></div>
+    </div>
+    <div class="content flex flex-9">
+        <div class="flex-1"></div>
+        <div class="login flex column flex-1">
+            <h1>Login</h1>
+            <div class="form">
+                <h3>Email</h3>
+                <input type="email" placeholder="Email" class="email">
+                <h3>Password</h3>
+                <input type="password" placeholder="Password" class="password">
+            </div>
+            <button class="loginBtn">Log in</button>
+            <div class="signUp">
+                <h3>Don't have an account?</h3>
+            </div>
+        </div>
+        <div class="photo flex-1">
+            <img src="https://cdn.getepic.com/website/assets/sign-in/parentLogin-graphic.svg" alt="photo">
+        </div>
+        <div class="flex-1"></div>
+    </div>
+    <div class="flex-2"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+
+    <script src="./js/base.js"></script>
+</body>
+
+</html>

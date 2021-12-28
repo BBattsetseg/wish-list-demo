@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>wishlist-schedule</title>
+      <script src="https://kit.fontawesome.com/ed2d1f5acf.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/schedule.css">
+      <link rel = "icon" href = "./svg/W.png">
+</head>
+
+<body>
+      <div class="navbar flex flex-1">
+            <div class="title flex flex-1">
+                  <img src="svg/W.png" alt="logo" width="50px">
+                  <h1>Wishlist</h1>
+              </div>
+            <div class="list flex flex-1">
+                <ul>
+                    <li>
+                        <h3 id="backToWishlist">Wishlist</h3>
+                    </li>
+                    <li><button class="logOut">Log Out</button></li>
+                </ul>
+            </div>
+      </div>
+      <div class="schedule-container flex-9">
+            <div class="wish-achieve">  
+                  <i class="far fa-trash-alt"></i>
+                  <div class="wish-coming">
+                        <h1 class="name"></h1>
+                  </div>
+                  <div class="wish-content">  
+                        <div class="wish-schedule">
+                              <div class="wish-card ">
+                                    <img class="wish-img" alt="img">
+                              </div>
+                        </div>
+                        <div class="flex   wish-point-container" >
+                              <div class="desc-container flex-5">
+                                    <span style="color: rgb(109, 175, 109);">Your wish is coming ...</span>
+                                    <div class="battery-container">
+                                          <div class="achieve percent" id="taskProcent">0%</div>
+                                    </div>
+                                   
+                              </div>
+                              <div class="point flex-2">
+                                    <div class="flex space-between">
+                                          <span>Total point:</span>
+                                          <span class="total-point "></span>
+                                    </div>
+                                    <div class="flex space-between">
+                                          <span >Your point:</span>
+                                          <span class="your-point">0</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="wish-desc">
+                              <p style="color:  #0b74bb; font-size: 1rem;">Detail information</p>
+                             
+                              <div class="purpose">Унадаг дугуй унаж сурах шаардлагатай байгаа.</div>
+                        </div>
+                        
+                  </div>
+            </div>
+            <div class="todo-container">
+                  <h1 class='garchig'>ToDo List</h1>
+                  <i class="fas fa-sort"></i>
+                  <div class="todos">
+                  </div>
+                  <p class='p-list'>Done List</p> 
+                  <i class="fas fa-sort fasort"></i>
+                  <div class="todos-completed">
+                  </div>
+                  <button class="add-todo">Add todo</button>
+            </div>           
+            <div class="modul-todo">
+                  <div class="modul-container">
+                        <h2 class="modul-title">Add new todo</h2>
+                        <h3>Title</h3>
+                        <input type="text" placeholder="Todo title" id="modul-todo-title" >
+                        <h3>Description</h3>
+                        <input type="text" placeholder="Write todo description" id="modul-todo-description">
+                        <h3>Due date</h3>
+                        <input type="date" placeholder="Date" id="modul-todo-date">
+                        <h3>Point</h3>
+                        <div class="modul-add-point">
+                              <input class="add-point" type="number" style="width: 60%;" placeholder="Enter point"    id="modul-todo-point">
+                              <span class="plus-point">+</span>
+                        </div>
+                        <button class="confirm-todo" type="submit">Add todo</button>    
+                  </div>
+            </div>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+  
+      <script src="js/base.js"></script>
+      <script src="js/schedule.controller.js"></script>
+      <script src="js/schedule.view.js"></script>
+</body>
+</html>
